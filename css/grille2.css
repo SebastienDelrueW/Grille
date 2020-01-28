@@ -9,13 +9,11 @@ body {
     border: 2px solid rgb(227, 148, 148);
     margin: 0 auto;
 }
-
 header {
     height: 360px;
     width: 100%;
     border: 5px solid rgb(186, 171, 171);
     margin: 0 auto;
-    
 }
 main {
     width: 50%;
@@ -24,19 +22,19 @@ main {
 }
 .column {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     border: 1px solid rgb(54, 54, 207);
 }
 .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     border: 1px solid rgb(54, 54, 207);
 }
 .row-reverse {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     border: 1px solid rgb(54, 54, 207);
 }
