@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: cadetblue;
+}
+.conteneur {
+    width: 75%;
+    border: 2px solid rgb(227, 148, 148);
+    margin: 0 auto;
+}
+
+header {
+    height: 360px;
+    width: 100%;
+    border: 5px solid rgb(186, 171, 171);
+    margin: 0 auto;
+    
+}
+main {
+    width: 50%;
+    border: 1px solid rgb(94, 94, 203);
+    margin: 0 auto;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid rgb(54, 54, 207);
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid rgb(54, 54, 207);
+}
+.row-reverse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid rgb(54, 54, 207);
+}
+.col-1 {width: 8.333333%;}
+.col-2 {width: 16.666666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333333%;}
+.col-5 {width: 41.666666%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333333%;}
+.col-8 {width: 66.666666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333333%;}
+.col-11 {width: 91.666666%;}
+.col-12 {width: 100%;}
+
+.marge-1 {margin-left: 8.333333%;}
+.marge-2 {margin-left: 16.666666%;}
+.marge-3 {margin-left: 25%;}
+.marge-4 {margin-left: 33.333333%;}
+.marge-5 {margin-left: 41.666666%;}
+.marge-6 {margin-left: 50%;}
+.marge-7 {margin-left: 58.333333%;}
+.marge-8 {margin-left: 66.666666%;}
+.marge-9 {margin-left: 75%;}
+.marge-10 {margin-left: 83.333333%;}
+.marge-11 {margin-left: 91.666666%;}
+.marge-12 {margin-left: 100%;}
+
+/* http://angelmarkos.free.fr/partage/hetic/mario.jpg */
+
+.bleu {background: blue; min-height: 160px;}
+.rouge {background: red; min-height: 160px;}
+.vert {background: green; min-height: 160px;}
+.jaune{background: gold; min-height: 160px;}
+.tarte{background: rgb(255, 132, 0); min-height: 160px;}
+.truc{background: rgb(255, 0, 217); min-height: 160px;}
+
+/* trois colonnes égales cotes à cotes  */
+
+.jaune {
+    background: gold;
+    border: 1px solid black;
+}
+
+.rouge {
+    background: red;
+    border: 1px solid black;
+}
+    
+.bleu {
+    background: blue;
+    border: 1px solid black;
+}
+
+.vert {
+    background: chartreuse;
+    border: 1px solid black;
+}
+
+.jaune {
+    background: gold;
+    border: 1px solid black;
+}
+
+.tarte {
+    background:maroon;
+    border: 1px solid black;
+    
+}
+.truc {
+    background: rgb(102, 102, 102);
+    border: 1px solid black;
+
+}
+   
+span {
+    background-color: crimson;
+}
+
+a {
+    font-family: fantasy;
+    color: black;
+    font-style: italic;
+}
+
+.footer {
+    width: 75%;
+    height: 500px;
+    border: 1px solid rgb(218, 51, 51);
+    margin: 0 auto;
+}
+    
