@@ -9,6 +9,9 @@ body {
     border: 2px solid red;
     margin: 0 auto;
 }
+
+
+
 .row {
     display: flex;
     flex-direction: row;
@@ -49,11 +52,34 @@ body {
 
 /* http://angelmarkos.free.fr/partage/hetic/mario.jpg */
 
-.bleu {background: blue; min-height: 60px;}
-.rouge {background:red; min-height: 60px;}
-.vert {background: green; min-height: 60px;}
-.jaune{background: gold; min-height: 60px;}
+.bleu {background: blue; min-height: 160px;}
+.rouge {background:red; min-height: 160px;}
+.vert {background: green; min-height: 160px;}
+.jaune{background: gold; min-height: 160px;}
+.tarte{background: rgb(255, 132, 0); min-height: 160px;}
+.truc{background: rgb(255, 0, 217); min-height: 160px;}
 
 /* trois colonnes égales cotes à cotes  */
 
-   
+.jaune{
+    background: url(../img/C_Ourcq.jpg) no-repeat;
+    background-size: cover;
+}
+
+.tarte{
+    background: url(../img/C_Ourcq.jpg);
+    height: 320px;
+    background-size: contain;
+    border: 1px solid black;
+}
+.truc{
+    background: url(../img/C_Ourcq.jpg);
+    background-size: contain;
+    opacity: 0.3;
+    color: blanchedalmond;
+}
+
+a {
+    background-color: crimson;
+}
+    
