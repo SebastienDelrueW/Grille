@@ -1,15 +1,11 @@
 *{
     box-sizing: border-box;
 }
+
 body {
-    background-color: rgb(165, 173, 173);
+    font-family: 'Roboto', sans-serif;
 }
-.conteneur {
-    width: 1200px; 
-    margin: 0 auto;
-    background: lightblue;
-    border: 1px solid white;
-}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -52,20 +48,38 @@ body {
 
 @media (max-width: 320px){
     body {
+        font-family: 'Roboto', sans-serif;
         background: #fff;
     }
     .conteneur {
         width: 100%;
-        background: #fff;
         margin-left: auto;
         margin-bottom: auto;
         border: none;
-       
+        background: #fff;
     }
     h1 {
         font-size: 120%;
         text-align: left;
         padding-left: 5px;
+        color: lightcyan;
+    }
+    header p {
+        color: rgb(255, 254, 254);
+        text-align: left;
+        padding-left: 5px; 
+    }
+     .row {
+        border: none;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
+    } 
+    .col-xsm-12 {
+        width: 100%;
+    }
+    .marge-xsm {
+        margin-left: 0;
     }
 }
 
@@ -73,14 +87,24 @@ body {
 
 @media (min-width: 321px) and (max-width: 767px) {
     body {
-        background: #b18578;
+        font-family: 'Roboto', sans-serif;
+        background: #fff;
     }
     .conteneur {
         width: 100%;
-        background: rgb(246, 247, 235);
         margin-left: auto;
-        margin-bottom: auto;
+        margin-right: auto;
+        border: none; 
+        background: #fff;
+    }
+    .row {
         border: none;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-12 {
+        width: 100%;
     }
 }
 
@@ -88,7 +112,8 @@ body {
 
 @media (min-width: 768px) and (max-width: 1096px) {
     body {
-        background: #1c2d3d;
+        font-family: 'Roboto', sans-serif;
+        background: #fff;
     }
     .conteneur {
         width: 100%;
@@ -102,27 +127,27 @@ body {
 
 @media (min-width: 1097px)  {
     body {
-        background: #684b5d;
+        font-family: 'Roboto', sans-serif;
+        background: #fff;
     }
     .conteneur {
-        width: 90%;
-        background: rgb(246, 247, 235);
-        margin: auto;
-       
+    width: 1200px; 
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid white; 
     }
 }
 
-
 /* couleurs génériques */
-.bleu {background: rgb(126, 126, 196); 
+
+.bleu {background: rgb(106, 106, 247); 
     min-height: 60px;
     color: white; 
     padding: 5px;}
 
 .rouge {background: rgb(201, 76, 76); min-height: 60px;}
-.vert {background: rgb(11, 104, 11); min-height: 60px;}
+.vert {background: rgb(62, 116, 62); min-height: 60px;}
 .jaune{background: rgb(196, 180, 93); min-height: 60px;}
-
 
 .header {
     text-align: center;
