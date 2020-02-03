@@ -140,14 +140,23 @@ body {
 
 /* couleurs génériques */
 
-.bleu {background: rgb(106, 106, 247); 
+.bleu {
+    background: rgb(106, 106, 247); 
     min-height: 60px;
     color: white; 
-    padding: 5px;}
-
-.rouge {background: rgb(201, 76, 76); min-height: 60px;}
-.vert {background: rgb(62, 116, 62); min-height: 60px;}
-.jaune{background: rgb(196, 180, 93); min-height: 60px;}
+    padding: 5px;
+}
+.rouge {
+    background: rgb(201, 76, 76); 
+    min-height: 60px;
+}
+.vert {
+    background: rgb(62, 116, 62);
+    min-height: 60px;
+}
+.jaune{
+    background: rgb(196, 180, 93); 
+    min-height: 60px;}
 
 .header {
     text-align: center;
