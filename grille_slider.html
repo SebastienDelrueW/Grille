@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photos de montagne</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- feuille de style avec des media queries pour le responsive -->
+    <link rel="stylesheet" href="css/grille_slider.css">
+</head>
+
+<body>
+    <div class="conteneur">
+        <!-- plusieurs rangées  -->
+        <!-- rangée 1 -->
+        <header class="row">
+            <div class="col-10 marge-1">
+                <h1>La montagne</h1>
+            </div>
+        </header>
+        <section class="row">
+            <!-- div.col-4*3 -->
+            <div class="col-xsm-12 col-sm-6 col-4 ">
+                <h2>1/Titre de niveau 2</h2>
+                <p>1/ Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestiae consectetur inventore natus veritatis quidem quos quae corrupti ipsa a deserunt quod, et porro, iure veniam. Accusantium reprehenderit debitis labore.</p>
+            </div>
+            <div class="col-xsm-12 col-sm-6 col-4 ">
+                <h2>2/Titre de niveau 2</h2>
+                <p>2/ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus illo, nemo, nisi animi harum ullam totam, dolorum autem magni natus delectus sint nihil molestiae tempora commodi quo perferendis atque dolorem!</p>
+            </div>
+            <div class="col-xsm-12 col-sm-12 col-4 ">
+                <h2>3/Titre de niveau 2</h2>
+                <p>3/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum delectus magnam a, quo fuga, esse aliquam inventore quos sit repudiandae similique, odio aspernatur! Delectus fugiat voluptas illo quaerat omnis.</p>
+                <p>4/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum delectus magnam a, quo fuga, esse aliquam inventore quos sit repudiandae similique, odio aspernatur! Delectus fugiat voluptas illo quaerat omnis.
+                </p>
+            </div>
+        </section>
+        <!-- rangée 2 -->
+        <section class="row">
+            <div class=" col-2 bleu">
+                <p>1/ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi soluta eligendi ducimus repellendus amet quisquam animi quae dolorum asperiores temporibus voluptates consequatur eos distinctio quas tenetur reiciendis, sapiente tempora
+                    sequi.
+                </p>
+            </div>
+            <div class="col-10">
+                <img src="imgs/1.jpg" alt="Texte alt" id="monImage">
+            </div>
+        </section>
+
+        <footer class="row jaune">
+            <!-- div.col-6*2 -->
+            <div class="col-xsm-12 col-sm-6 col-4 rouge">
+                <p>1/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil magni officiis assumenda magnam, ea facilis deleniti dolorum nulla qui saepe libero veritatis fuga pariatur dolor doloribus! Quisquam, laudantium alias.</p>
+            </div>
+            <div class="col-xsm-12 col-sm-6 col-8 ">
+                <p>2/ Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae, saepe porro labore suscipit ratione nisi! Et at tempora voluptas repudiandae, eius aliquid enim soluta distinctio odit fuga adipisci temporibus!</p>
+            </div>
+        </footer>
+        <!-- fermeture conteneur -->
+    </div>
+
+    <script>
+        var diapo = 0; // en variable j'initialise à 0
+
+        function f() {
+            diapo += 1 // j'incrémente de 1
+            monImage.setAttribute('src', 'imgs/' + diapo + '.jpg'); // je confère , je définis , je mets en place et j'appelle les images par leur nom automatiquement 
+            if (diapo == 5) { // le nombre total d'images contenues dans mon slider
+                // clear interval permet de stopper sous la condtion que la variable est égal à 6
+                // clearInterval(timer) // le clear interval permet de stopper setInterval définit plus bas
+                diapo = 0;
+            }
+        }
+        var timer = window.setInterval('f()', 1000);
+        // 3000(milli seconde) c 'est le temps entre chaque photos
+        // window.setInterval('f()', 1000);
+    </script>
+</body>
+
+</html>
